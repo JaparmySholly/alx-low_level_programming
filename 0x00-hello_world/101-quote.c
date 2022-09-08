@@ -5,11 +5,12 @@
 /**
  * main - entry point
  *
- * Return 0
+ * Return: 0
  *
  */
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 61);
-	return (1);
+	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	system("rm barhamounafissa > sorti 2>&1");
+	exit(1);
 }
