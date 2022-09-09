@@ -9,14 +9,21 @@
  */
 int main(void)
 {
-	int d;
-	char low;
-
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-	for (low = 'a'; low <= 'f'; low++)
-		putchar(low);
-		putchar('\n');
-
+	char ch = 'a';
+	int i = 48;
+	/* your code goes there */
+	while (i < 58)
+	{
+		putchar(i);
+		i++;
+	}
+	i = 0;
+	while (i < 6)
+	{
+		putchar(ch);
+		ch++;
+		i++;
+	}
+	putchar('\n');
 	return (0);
 }
