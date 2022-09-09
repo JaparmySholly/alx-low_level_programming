@@ -8,27 +8,23 @@
 
 int main(void)
 {
-	int u = 49;
-	int d = 48;
-	int position_u = 49;
-	/* your code goes there */
-	while (d <= 56)
+	int digit1, digit2;
+
+	for (digit1 = 0; digit1 < 9; digit1++)
 	{
-		while (u <= 57)
+		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 		{
-			putchar(d);
-			putchar(u);
-			if (d != 56 || u != 57)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-			u++;
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
+
+			if (digit1 == 8 && digit2 == 9)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
-		d++;
-		position_u++;
-		u = position_u;
 	}
+
 	putchar('\n');
 	return (0);
 }
