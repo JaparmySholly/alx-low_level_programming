@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * islower - checks for lower case of argument
@@ -10,7 +11,7 @@
 
 int _islower(int c)
 {
-	if (islower(c))
+	if (c > 'a' && c < 'z')
 	{
 		return (1);
 	}
