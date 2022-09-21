@@ -1,4 +1,9 @@
 #include "main.h"
+
+/**
+ * _strncat - concatenates n bytes of two strings
+ */
+
 char *_strncat(char *dest, char *src, int n)
 
 {
