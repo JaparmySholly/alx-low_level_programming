@@ -2,6 +2,21 @@
 #include "main.h"
 
 /**
+ * _strlen - find length of a string
+ * @s: string
+ * Return: int
+ */
+
+int _strlen(char *s)
+{
+	int size = 0;
+	for (; s[size] != '\0'; size++)
+		;
+	return (size);
+}
+
+
+/**
  * *argstostr - concatenates all the arguments of the program
  * @ac: number of arguments
  * @av: array of arguments
