@@ -14,6 +14,7 @@ void close_file(int fd);
 char *create_buffer(char *file)
 {
 	char *buffer;
+
 	buffer = malloc(sizeof(char) * 1024);
 
 	if (buffer == NULL)
@@ -33,6 +34,7 @@ char *create_buffer(char *file)
 void close_file(int fd)
 {
 	int c;
+
 	c = close(fd);
 
 	if (c == -1)
@@ -86,8 +88,7 @@ int main(int argc, char *argv[])
 		}
 		r = read(from, buffer, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
-	}
-	while (r > 0);
+	} while (r > 0);
 	free(buffer);
 	close_file(from);
 	close_file(to);
